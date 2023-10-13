@@ -5,6 +5,8 @@ export const FinanceList = ({financeInfo, deleteCard}) => {
 
     return (
         <section>
+            {financeInfo.length > 0 ?(
+
             <ul>
                 {financeInfo.map ((balance) => {
                     
@@ -19,6 +21,9 @@ export const FinanceList = ({financeInfo, deleteCard}) => {
                 } )}
                 
             </ul>
+            ) :
+            <h2>Você não possui nenhum lançamento</h2>
+        }
         </section>
     );
 }

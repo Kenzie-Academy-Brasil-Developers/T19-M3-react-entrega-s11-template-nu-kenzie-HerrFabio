@@ -10,7 +10,7 @@ export const LandingPages = ({financeInfo, addFinanceInfo, deleteCard}) => {
             <DefaultTemplate>
                 <FinanceForm  addFinanceInfo={addFinanceInfo}/>
                 <FinanceList financeInfo={financeInfo} deleteCard={deleteCard}/>
-                <Total />
+                <Total financeInfo={financeInfo} />
             </DefaultTemplate>
         </>
     
