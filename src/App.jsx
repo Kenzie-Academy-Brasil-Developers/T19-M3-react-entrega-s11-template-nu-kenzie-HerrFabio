@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LandingPages } from "../src/pages/LandingPages/index.jsx";
+import "./styles/index.scss";
 
 function App() {
   const [financeInfo, setFinanceInfo] = useState ([]);

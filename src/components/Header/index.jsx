@@ -1,7 +1,10 @@
+import styles from "./style.module.scss"
 import NuKenzie from "../../assets/nu-kenzie.jpg";
 
 export const Header = () => {
     return (
-        <img src={NuKenzie} alt="Logo NuKenzie" />
+        <div className={styles.headerBox}>
+            <img src={NuKenzie} alt="Logo NuKenzie" />
+        </div>
     );
 };

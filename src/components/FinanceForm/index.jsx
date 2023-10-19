@@ -2,6 +2,7 @@ import { useState } from "react";
 import { TextareaForm } from "../FinanceForm/TextareaForm/index.jsx";
 import { InputForm } from "../FinanceForm/InputForm/index.jsx";
 import { SelectForm } from "../FinanceForm/SelectForm/index.jsx";
+import styles from "./style.module.scss"
 
 export const FinanceForm = ({addFinanceInfo}) => {
     const [description, setDescription] = useState("");
@@ -20,22 +21,24 @@ export const FinanceForm = ({addFinanceInfo}) => {
 
     return (
 
-        <form onSubmit={submit}>
-            <TextareaForm
+        <form className={styles.formBox} onSubmit={submit}>
+            <TextareaForm 
                 label="Descrição"
                 placeholder="Digite sua descrição"
                 id="description"
                 value={description}
-                setValue={setDescription} />
+                setValue={setDescription} 
+                required/>
 
 
             <InputForm
-                label="number"
+                label="Valor (R$)"
                 type="number"
                 placeholder="1"
                 id="number"
                 value={amount}
-                setValue={setAmount} />
+                setValue={setAmount} 
+                required/>
 
             <SelectForm
                 label="option"
@@ -43,12 +46,12 @@ export const FinanceForm = ({addFinanceInfo}) => {
                 id="option"
                 value={selectedOption}
                 setValue={setSelectedOption} 
+                required
 
             />
-
-
-
-            <button type="submit">Inserir Valor</button>
+            
+            <button className="btn large" type="submit">Inserir Valor</button>
+            
         </form>
     );
 };

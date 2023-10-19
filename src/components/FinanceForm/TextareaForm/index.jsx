@@ -1,7 +1,9 @@
-export const TextareaForm = ({label,type, id, placeholder, value, setValue}) => {
+import styles from "./style.module.scss"
+
+export const TextareaForm = ({label,type, id, placeholder, value, setValue, required}) => {
     return (
-        <div>
-            <label htmlFor="id">{label}</label>
+        <div className={styles.textareaBox  }>
+            <label className="paragraph two color" htmlFor="id">{label}</label>
             <textarea 
             name={id} 
             id={id} 
@@ -9,8 +11,9 @@ export const TextareaForm = ({label,type, id, placeholder, value, setValue}) => 
             placeholder={placeholder} 
             value={value} 
             onChange={(e) => setValue(e.target.value)}
+            required={required}
             ></textarea>
-            <p>Ex: Compra de roupas</p>
+            <p className="paragraph two colorTwo">Ex: Compra de roupas</p>
         </div>
     );
 };

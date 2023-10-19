@@ -4,13 +4,13 @@ import { FinanceList } from "../../components/FinanceList/index.jsx";
 import { Total } from "../../components/FinanceForm/Total/index.jsx";
 
 
-export const LandingPages = ({financeInfo, addFinanceInfo, deleteCard}) => {
+export const LandingPages = ({financeInfo, addFinanceInfo, deleteCard, financeCard}) => {
     return (
         <>
             <DefaultTemplate>
                 <FinanceForm  addFinanceInfo={addFinanceInfo}/>
-                <FinanceList financeInfo={financeInfo} deleteCard={deleteCard}/>
                 <Total financeInfo={financeInfo} />
+                <FinanceList financeInfo={financeInfo} deleteCard={deleteCard} financeCard={financeCard}/>
             </DefaultTemplate>
         </>
     
