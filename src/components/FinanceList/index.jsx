@@ -6,7 +6,7 @@ export const FinanceList = ({financeInfo, deleteCard}) => {
 
     return (
         
-            <div className={styles.listBox}>
+            <div className={styles.listBox}> 
 
             <h3 className="title three">Resumo financeiro</h3>
             {financeInfo.length > 0 ?(

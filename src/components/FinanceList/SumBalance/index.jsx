@@ -4,7 +4,6 @@ export const SumBalance = ({ financeInfo }) => {
   const totalFinance = financeInfo.reduce((prevAmount, balance) => {
     const balanceAmount = parseFloat(balance.amount);
 
-    // Usando operador ternário para verificar a opção e subtrair ou somar
     const updatedAmount =
       balance.selectedOption === "Despesa"
         ? prevAmount - balanceAmount

@@ -5,19 +5,19 @@
     height: 6.875rem;
 
     input {
-        width: 19.625rem;
+        width: 16.625rem;
         height: 3.25rem;
-        padding: 0.7rem 1rem;
         resize: none;
-
+        
+        padding: 0.7rem 1rem;
+        
         border-radius: 0.5rem;
         border: 2px solid var(--Grey-2);
         background: var(--Grey-2);
-
+        
         font-family: var(--font-primary);
         font-size: 1rem;
-        gap: 0rem 0.625rem;
-
+        
         position: relative;
         top: 1rem;
     }

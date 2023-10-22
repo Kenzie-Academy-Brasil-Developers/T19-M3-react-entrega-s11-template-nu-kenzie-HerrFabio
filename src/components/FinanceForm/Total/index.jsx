@@ -9,9 +9,9 @@ export const Total = ({ financeInfo }) => {
 
                 <h3>Valor total:</h3>
                 
-                <div>
+                
                 <SumBalance financeInfo={financeInfo} />
-                </div>
+                
 
                 <p>O valor se refere ao saldo</p>
 

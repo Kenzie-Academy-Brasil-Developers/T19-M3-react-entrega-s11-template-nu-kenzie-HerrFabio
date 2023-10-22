@@ -9,14 +9,14 @@ export const FinanceCard = ({ description, amount, selectedOption, id, deleteCar
     
      return ( 
  
-        <div className={styles.cardBox}>
+        <div className={`${styles.cardBox} ${selectedOption === "Entrada" ? styles.green : styles.grey}`}>
             <h2 className="title three">{description}</h2>
 
-            <div className="option">
+            <div>
                 {selectedOption}
             </div>
 
-            <div className="value">
+            <div>
                 {formattedAmount}
             </div>
 

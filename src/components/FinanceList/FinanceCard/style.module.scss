@@ -7,14 +7,21 @@
 
     gap: 1.3rem;
     margin: 1rem 1rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.1rem;
     position: relative;
-    width: 22rem;
+    right: 1rem;
+    width: 17.7rem;
     height: 10rem;
 
     border-left: 0.25rem solid;
     border-radius: 0.25rem;
-    border-color: var(--color-secundary);
+
+    &.green {
+        border-color: var(--color-secundary);
+    }
+
+    &.grey {
+        border-color: var(--Grey-2);
+    }
 
     div {
         display: flex;
@@ -34,6 +41,4 @@
         bottom: 1.7rem;
         margin-left: 1rem;
     }
-
-
 }

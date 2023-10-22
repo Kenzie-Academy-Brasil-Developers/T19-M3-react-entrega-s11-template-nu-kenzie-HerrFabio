@@ -3,9 +3,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0rem 0.75rem 3rem 1.1875rem;
+    padding: 0rem 0.75rem 0rem 1.1875rem;
 
-    margin: 2rem 0.875rem 1.3125rem 0.8125rem;
-    border: 0.0625rem solid;
-    border-color: var(--Grey-2);
+    margin: 1.8125rem 0.875rem 1.1875rem 1.3125rem;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+
+     @media screen and (max-width: 767px) {
+        /* Propriedades CSS específicas para telas menores ou iguais a 767px de largura */
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+        /* Propriedades CSS específicas para telas entre 768px e 1439px de largura */
+        
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+        /* Propriedades CSS específicas para telas maiores ou iguais a 1440px de largura */
+        
+        padding: 1.5rem;
+        margin: 3rem;
+    }
 }
+

@@ -12,10 +12,10 @@ export const SelectForm = ({label, selectOptions, value, setValue, id, required}
         value={value}
         onChange={(e) => setValue(e.target.value)}
         required={required}>
-        
+         
         <option value="-">-</option>
-        <option className="entrada" value="Entrada">Entrada</option>
-        <option className="despesa" value="Despesa">Despesa</option>
+        <option value="Entrada">Entrada</option>
+        <option value="Despesa">Despesa</option>
         
       </select>
       

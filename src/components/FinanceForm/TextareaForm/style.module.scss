@@ -1,16 +1,18 @@
 .textareaBox {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1.875rem 1.25rem 0.625rem 1.3125rem;
     height: 6.875rem;
 
 
 
     textarea {
-        width: 19.625rem;
+        display: flex;
+        width: 16.4375rem;
         height: 3.25rem;
-        padding: 0.7rem 1rem;
         resize: none;
+
+        padding: 0.8rem;
 
         border-radius: 0.5rem;
         border: 2px solid var(--Grey-2);
@@ -18,9 +20,9 @@
 
         font-family: var(--font-primary);
         font-size: 1rem;
-        gap: 0rem 0.625rem;
 
         position: relative;
         top: 1rem;
+        
     }
 }
